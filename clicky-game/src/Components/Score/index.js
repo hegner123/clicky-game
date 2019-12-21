@@ -1,10 +1,13 @@
 import React from "react";
 
-function Score(){
+function Score(props){
   return(
     <div className="ml-auto">
-    <span><strong>Score:</strong> 123</span>
-    </div>
+      <div className="ml-auto">
+        <span><strong>Score:</strong>{props.score}</span>
+          <span className="ml-5"><strong>TopScore:</strong>{props.topScore}</span>
+        </div>
+      </div>
   )
 };
 

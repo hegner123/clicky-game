@@ -1,12 +1,12 @@
-import {React, Component} from 'react';
-import Card from "../Cards"
+import React from 'react';
 
-class Display extends Component(){
-  render(){
-    return(
-      <div>Hig</div>
-    )
-  }
+function Display(props){
+  return(
+    <div className="row">
+      {props.children}
+    </div>
+  )
 }
+
 
 export default Display
